@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: hsl(233, 47%, 7%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  /* margin: 0 auto; */
+  padding: 8.5rem 2rem 8.5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  max-width: 37.5rem;
+  background-color: hsl(244, 38%, 16%);
+  display: grid;
+  border-radius: 11px;
+  overflow: hidden;
+}
+
+.img-box {
+  position: relative;
+}
+.img-office-mobile {
+  width: 100%;
+  display: block;
+}
+.img-office {
+  display: none;
+}
+.purple-box {
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+  background: rgba(91, 4, 146, 0.964);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.text-box {
+  padding: 4rem 3.5rem 4rem 3.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
+  font-size: 3.4rem;
+  text-align: center;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 3rem;
+}
+span {
+  color: rgba(170, 92, 219, 0.935);
+}
+.text {
+  text-align: center;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 0.7);
+  line-height: 1.6;
+  margin-bottom: 3rem;
+}
+.stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+.stats-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.stats-nr {
+  font-size: 2.8rem;
+  color: hsla(0, 0%, 100%, 0.91);
+}
+.stats-txt {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 0.56);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+@media (min-width: 69.5em) {
+  .card {
+    max-width: 111rem;
+    grid-template-columns: 57fr 54fr;
+    grid-template-rows: 1fr;
+    max-height: 44.5rem;
+  }
+
+  .img-box {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .img-office-mobile {
+    display: none;
+  }
+  .img-office {
+    display: block;
+    width: 100%;
+  }
+
+  .text-box {
+    grid-column: 1;
+    grid-row: 1;
+    padding: 6rem 6.5rem 6rem 6.5rem;
+  }
+  .heading {
+    font-size: 4rem;
+    text-align: start;
+  }
+  .text {
+    font-size: 1.5rem;
+    text-align: start;
+    margin-bottom: 5rem;
+  }
+  .stats {
+    flex-direction: row;
+    /* justify-content: space-between; */
+
+    align-self: flex-start;
+    gap: 8rem;
+  }
+} ;
